@@ -1,4 +1,4 @@
-    <!DOCTYPE html>
+           <!DOCTYPE html>
 <html lang="es">
 <head>
     <meta charset="UTF-8">
@@ -266,7 +266,7 @@
         <footer>
             <p><b>Proyecto Bachillerato | Veracruz 2026 | HTML5 + CSS3 + JavaScript</b></p>
             <p id="fechaActual"></p>
-            <p>Alumno: ALBERTO DEL ÁNGEL SANTIAGO | GRUPO 202</p>
+            <p>Alumno: [Tu Nombre] | Grupo: [Tu Grupo]</p>
         </footer>
     </div>
     <script>
@@ -301,7 +301,7 @@
                 'acopio': '📦 <b>Solución:</b> La UV tiene 15 centros de acopio. Pagan $10/kg. Estudiantes de Biología ganan becas reciclando. El programa "UV Verde" recolectó 45 toneladas en 2025.',
                 'ropa': '👕 <b>Nueva Vida:</b> Empresas de Córdoba hacen uniformes deportivos. 5 botellas = 1 playera. 10 botellas = 1 par de tenis. El PET reciclado ahorra 60% de energía vs PET virgen.'
             };
-            info.innerHTML = historias;
+            info.innerHTML = historias[tipo];
         }
         function resaltarMeta() {
             const filas = document.querySelectorAll('#tablaDatos tr');
@@ -331,22 +331,4 @@
                 🗑️ Tiras <b>${noRecicladas}</b> botellas al ambiente<br>
                 🌳 Salvas <b>${arboles} árboles</b> y evitas <b>${co2} kg CO2</b><br>
                 💧 Ahorras <b>${agua} litros</b> de agua<br>
-                ⏰ Si no reciclas: <b>${noRecicladas * 450}</b> años de contaminación`;
-        }
-        function limpiarCalculo() { document.getElementById('botellasSemana').value = ''; document.getElementById('resultadoCalculo').innerHTML = ''; }
-        let clicks = parseInt(localStorage.getItem('clicksPET')) || 0;
-        document.getElementById('contador').textContent = clicks; actualizarBarraMeta();
-        function sumarContador(cantidad = 1) {
-            clicks += cantidad; const contador = document.getElementById('contador');
-            contador.textContent = clicks; contador.classList.add('contador-animado');
-            setTimeout(() => contador.classList.remove('contador-animado'), 600);
-            localStorage.setItem('clicksPET', clicks); actualizarBarraMeta();
-            if (clicks % 50 === 0) { alert(`🎉 ¡Increíble! La comunidad lleva ${clicks} botellas recicladas`); }
-        }
-        function resetContador() { clicks = 0; document.getElementById('contador').textContent = 0; localStorage.setItem('clicksPET', 0); actualizarBarraMeta(); }
-        function actualizarBarraMeta() {
-            const barra = document.getElementById('barraMeta'); const porcentaje = Math.min((clicks / 1000) * 100, 100);
-            barra.style.width = porcentaje + '%'; barra.textContent = `${clicks} / 1000 botellas`;
-            if (clicks >= 1000) { barra.textContent = '🎉 ¡META CUMPLIDA!'; barra.style.background = 'linear-gradient(90deg, #FFD700, #FFA000)'; }
-        }
-        let puntos = 0, tiempo                              
+                ⏰ Si no recic                                         
