@@ -1,4 +1,4 @@
-             <!DOCTYPE html>
+    <!DOCTYPE html>
 <html lang="es">
 <head>
     <meta charset="UTF-8">
@@ -62,7 +62,7 @@
         th { background: linear-gradient(45deg, #00695C, #00897B); color: white; padding: 15px; font-size: 1.1em; }
         td { border-bottom: 1px solid #E0E0E0; padding: 15px; text-align: center; transition: all 0.3s; }
         tr:hover td { background-color: #E0F2F1; transform: scale(1.02); }
-        tr:nth-child(even) { background-color: #F5F5; }
+        tr:nth-child(even) { background-color: #F5F5F5; }
         button { background: linear-gradient(45deg, #00897B, #009688); color: white; border: none; padding: 12px 25px; border-radius: 30px; cursor: pointer; margin: 8px; font-weight: bold; transition: all 0.4s; box-shadow: 0 4px 15px rgba(0,137,123,0.3); font-size: 15px; }
         button:hover { transform: translateY(-4px) scale(1.05); box-shadow: 0 8px 25px rgba(0,137,123,0.5); }
         input, select { padding: 12px; border: 3px solid #4DB6AC; border-radius: 10px; width: 200px; font-size: 16px; transition: all 0.3s; margin: 5px; }
@@ -86,8 +86,6 @@
         .dato-extra { background: #E1F5FE; padding: 15px; border-radius: 10px; border-left: 4px solid #0288D1; margin: 15px 0; }
         .modo-oscuro .dato-extra { background: #1A237E; border-left-color: #42A5F5; }
         @media (max-width: 768px) { h1 { font-size: 1.8em; } nav a { display: block; margin: 5px 0; } .stats-header { flex-direction: column; } }
-        .botella-juego { position: absolute; width: 40px; height: 40px; font-size: 35px; cursor: pointer; user-select: none; transition: transform 0.2s; }
-        .botella-juego:hover { transform: scale(1.2); }
     </style>
 </head>
 <body>
@@ -114,28 +112,26 @@
         <main>
             <section id="impacto">
                 <h2>1. Impacto Ambiental del PET</h2>
-                <p>El <b>PET (Tereftalato de Polietileno)</b> es un polímero termoplástico de la familia de los poliésteres, inventado en 1941 por Whinfield y Dickson. Su código de reciclaje es el <b>#1</b>. Tarda <span class="resaltado" id="añosDegradacion" style="color:#D32F2F; font-size:1.2em;">450 años</span> en degradarse en las playas de Veracruz.</p>
+                <p>El <b>PET (Tereftalato de Polietileno)</b> es un polímero termoplástico descubierto en 1941. Tarda <span class="resaltado" id="añosDegradacion" style="color:#D32F2F; font-size:1.2em;">450 años</span> en degradarse en las playas de Veracruz.</p>
                 
                 <div class="dato-extra">
-                    <b>🔬 Composición química:</b> Se fabrica con petróleo: ácido tereftálico + etilenglicol. Es ligero, transparente, resistente a impactos y 100% reciclable si está limpio. Una botella de 600ml pesa solo 25g pero usa 3L de agua en su producción. El PET virgen cuesta $25/kg, el reciclado $18/kg. <b>Punto de fusión: 260°C</b>. Densidad: 1.38 g/cm³.
+                    <b>🔬 ¿Qué es el PET químicamente?</b> Es un poliéster que se obtiene de la reacción entre ácido tereftálico y etilenglicol. Su símbolo de reciclaje es el <b>#1</b> dentro del triángulo. Es 100% reciclable pero solo si está limpio y separado.
                 </div>
 
                 <button onclick="cambiarDato()">⚡ Ver Dato Impactante</button>
                 <button onclick="mostrarAlerta()">🚨 Alerta Ambiental</button>
                 
-                <h3>¿Por qué es un problema grave en Veracruz?</h3>
+                <h3>¿Por qué es un problema en Veracruz?</h3>
                 <ul>
-                    <li><b>Golfo de México:</b> Las corrientes marinas arrastran PET a manglares de Alvarado, Tuxpan y Sistema Lagunar de Alvarado. Afecta a 180 especies de flora y fauna, incluyendo manatíes y delfines. El PET bloquea la fotosíntesis del fitoplancton.</li>
-                    <li><b>Tortugas marinas:</b> En playas de Chachalacas, Costa Esmeralda y Tecolutla confunden PET con medusas. El 52% de tortugas lora analizadas por la UV tenían plástico en estómago. Causa "bloqueo intestinal" y muerte por inanición en 30 días.</li>
-                    <li><b>Microplásticos:</b> El sol y la sal fragmentan el PET en partículas <5mm. Entran a la cadena del ostión, camarón, robalo y mojarra. Un veracruzano consume 5g de microplástico al año = 1 tarjeta de crédito.</li>
-                    <li><b>Huracanes:</b> "Karl" 2010 y "Grace" 2021 esparcieron toneladas. En 2021 se recogieron 380 toneladas de PET post-huracán solo en Boca del Río. Equivale a 15 millones de botellas o llenar el Estadio Pirata Fuente 3 veces.</li>
-                    <li><b>Drenajes:</b> En Xalapa, Veracruz puerto y Coatzacoalcos, el 40% de inundaciones en temporada de lluvias son por PET tapando alcantarillas. El municipio gasta $8 MDP al año en desazolve. Una botella tapa 1 drenaje.</li>
-                    <li><b>Salud humana:</b> Al degradarse libera antimonio, un metal tóxico. En botellas expuestas al sol >30°C puede migrar al agua. La OMS fija límite de 20 μg/L. Causa problemas respiratorios, piel y se acumula en riñones.</li>
-                    <li><b>Cambio climático:</b> Producir 1kg de PET virgen emite 3.4 kg de CO2. Reciclar 1 ton de PET evita 1.5 ton de CO2 = plantar 25 árboles.</li>
+                    <li><b>Golfo de México:</b> Las corrientes del Golfo arrastran PET a manglares de Alvarado y Tuxpan, afectando 180 especies</li>
+                    <li><b>Tortugas marinas:</b> En playas de Chachalacas y Costa Esmeralda confunden PET con medusas. El 52% de tortugas tienen plástico en estómago</li>
+                    <li><b>Microplásticos:</b> Se fragmenta por el sol y sal. Entra a la cadena del ostión, camarón y pescado que consumes</li>
+                    <li><b>Huracanes:</b> Eventos como "Karl" y "Grace" esparcen toneladas de PET. En 2021 se recogieron 380 toneladas post-huracán</li>
+                    <li><b>Drenajes:</b> En Xalapa y Veracruz puerto, el 40% de inundaciones son por PET tapando alcantarillas</li>
                 </ul>
 
                 <div class="dato-extra">
-                    <b>💡 México vs Mundo:</b> México es el 2° consumidor de PET per cápita: 8.5 kg por persona al año. Solo Estados Unidos nos supera con 10.2 kg. Veracruz genera 48,000 toneladas anuales = llenar 3 veces el Estadio Luis Pirata Fuente o 1,920 camiones de volteo de 25 ton. <b>Reciclamos 56% vs 9% mundial</b>.
+                    <b>💡 Dato curioso:</b> México es el 2° país que más PET consume per cápita en el mundo: 8.5 kg por persona al año. Veracruz genera 48,000 toneladas anuales, suficiente para llenar 3 veces el Estadio Luis Pirata Fuente.
                 </div>
 
                 <div class="progress-container"><div class="progress-bar" id="barraContaminacion">0% Contaminado</div></div>
@@ -149,42 +145,40 @@
                     <tr><td>% Reciclado</td><td>52%</td><td>60%</td><td>85%</td></tr>
                     <tr><td>Centros de Acopio</td><td>120</td><td>180</td><td>300</td></tr>
                     <tr><td>Empleos Generados</td><td>3,200</td><td>4,500</td><td>8,000</td></tr>
-                    <tr><td>Botellas per cápita/año</td><td>285</td><td>310</td><td>150</td></tr>
-                    <tr><td>Valor mercado PET</td><td>$360 MDP</td><td>$480 MDP</td><td>$650 MDP</td></tr>
-                    <tr><td>CO2 evitado (ton)</td><td>67,500</td><td>72,000</td><td>45,000</td></tr>
+                    <tr><td>Botellas per cápita</td><td>285</td><td>310</td><td>150</td></tr>
                 </table>
                 <button onclick="resaltarMeta()">🎯 Resaltar Meta 2030</button>
                 <button onclick="agregarCiudad()">➕ Agregar Ciudad</button>
                 
                 <h3>Ciudades con Mayor Recolección:</h3>
                 <ol id="listaCiudades">
-                    <li><b>Veracruz Puerto:</b> 15,000 ton/año - Programa "Mar Limpio". 45 colonias con contenedores especiales. Recogen 2 ton/día de playas. Tienen 3 máquinas compactadoras. Tasa reciclaje: 68%.</li>
-                    <li><b>Xalapa:</b> 8,500 ton/año - Universidades líderes. La UV recicla 12 ton/mes en sus 5 campus. Programa "Xalapa Limpia" con 80 puntos verdes. Tasa reciclaje: 71%.</li>
-                    <li><b>Córdoba:</b> 6,200 ton/año - Corredor industrial. 8 plantas de peletizado. Aquí se procesa el 40% del PET reciclado estatal y se exporta a Puebla. Tasa reciclaje: 65%.</li>
+                    <li><b>Veracruz Puerto:</b> 15,000 ton/año - Programa "Mar Limpio". 45 colonias con contenedores especiales</li>
+                    <li><b>Xalapa:</b> 8,500 ton/año - Universidades líderes. UV recicla 12 ton/mes en sus campus</li>
+                    <li><b>Córdoba:</b> 6,200 ton/año - Corredor industrial. 8 plantas de peletizado</li>
                 </ol>
 
                 <div class="dato-extra">
-                    <b>💰 Economía circular del PET:</b> 1 kg de PET limpio se paga entre $8-$12 MXN. Una familia que separa bien genera $300-$500 al mes. En Veracruz hay 12,000 pepenadores formales y 8,000 informales. Una planta de reciclaje da empleo directo a 50-200 personas. El PET reciclado ahorra 60% de energía vs virgen y 70% de agua. <b>1 ton reciclada = 17 barriles de petróleo ahorrados</b>.
+                    <b>💰 Economía circular:</b> 1 kg de PET se paga entre $8-$12 MXN. Una familia que separa bien puede ganar $300-$500 al mes. En Veracruz hay 12,000 pepenadores que viven del reciclaje.
                 </div>
             </section>
             <section id="galeria">
                 <h2>3. Galería Interactiva: El Viaje del PET</h2>
-                <p>Haz click en cada imagen para descubrir su historia completa:</p>
+                <p>Haz click en cada imagen para descubrir su historia:</p>
                 <div class="galeria">
                     <div class="tarjeta-img" onclick="mostrarHistoria('botella')">
-                        <img src="https://i.imgur.com/8QfGz3M.jpg" alt="Botellas nuevas">
+                        <img src="https://images.unsplash.com/photo-1604187351574-c75ca79f5807?w=400" alt="Botellas nuevas">
                         <div class="info-tarjeta"><h4>🧴 Nacimiento</h4><p>Fábrica en Orizaba</p></div>
                     </div>
                     <div class="tarjeta-img" onclick="mostrarHistoria('playa')">
-                        <img src="https://i.imgur.com/L5kKq9r.jpg" alt="Playa contaminada">
+                        <img src="https://images.unsplash.com/photo-1618477461853-cf6ed80faba5?w=400" alt="Playa contaminada">
                         <div class="info-tarjeta"><h4>🏖️ Problema</h4><p>Boca del Río, 2025</p></div>
                     </div>
                     <div class="tarjeta-img" onclick="mostrarHistoria('acopio')">
-                        <img src="https://i.imgur.com/2wQZv8F.jpg" alt="Centro acopio">
+                        <img src="https://images.unsplash.com/photo-1532996122724-e3c354a0b15b?w=400" alt="Centro acopio">
                         <div class="info-tarjeta"><h4>📦 Solución</h4><p>Centro de Acopio UV</p></div>
                     </div>
                     <div class="tarjeta-img" onclick="mostrarHistoria('ropa')">
-                        <img src="https://i.imgur.com/9pX7dNq.jpg" alt="Ropa reciclada">
+                        <img src="https://images.unsplash.com/photo-1523381210434-271e8be1f52b?w=400" alt="Ropa reciclada">
                         <div class="info-tarjeta"><h4>👕 Nueva Vida</h4><p>Playeras deportivas</p></div>
                     </div>
                 </div>
@@ -193,45 +187,37 @@
             <section id="proceso">
                 <h2>4. Proceso de Reciclaje en Veracruz</h2>
                 <table>
-                    <tr><th>Etapa</th><th>¿Qué se hace?</th><th>¿Dónde en Veracruz?</th><th>Tiempo</th><th>Dato Clave</th></tr>
-                    <tr><td>1. Acopio</td><td>Se recolecta PET limpio, sin tapas, etiquetas ni residuos orgánicos</td><td>180 centros: escuelas, colonias, UV, OXXO, Chedraui</td><td>1-2 días</td><td>Se paga $10/kg</td></tr>
-                    <tr><td>2. Lavado</td><td>Se quitan etiquetas, se lava con sosa cáustica a 80°C para quitar pegamento y bacterias</td><td>Plantas Córdoba, Orizaba y Poza Rica</td><td>4 horas</td><td>Usa 2L agua/kg PET</td></tr>
-                    <tr><td>3. Molido</td><td>Se tritura en hojuelas de 8-12mm llamadas "flake". Se separa por colores: transparente, verde, azul</td><td>Coatzacoalcos, Poza Rica, Minatitlán</td><td>2 horas</td><td>1 ton = 40,000 botellas</td></tr>
-                    <tr><td>4. Peletizado</td><td>Se funde a 260°C y se extruye en pellets como granos de arroz. Se llama "rPET"</td><td>Corredor industrial Coatzacoalcos</td><td>3 horas</td><td>Listo para fabricar</td></tr>
-                    <tr><td>5. Nueva Vida</td><td>Fibras textiles, láminas para termoformado, botellas nuevas, madera plástica, fleje</td><td>Fábricas Orizaba, Xalapa, Córdoba</td><td>1 día</td><td>Ahorra 60% energía</td></tr>
+                    <tr><th>Etapa</th><th>¿Qué se hace?</th><th>¿Dónde en Veracruz?</th><th>Tiempo</th></tr>
+                    <tr><td>1. Acopio</td><td>Se recolecta PET limpio, sin tapas ni etiquetas</td><td>180 centros: escuelas, colonias, UV</td><td>1-2 días</td></tr>
+                    <tr><td>2. Lavado</td><td>Se quitan etiquetas, lava con sosa cáustica a 80°C</td><td>Plantas Córdoba y Orizaba</td><td>4 horas</td></tr>
+                    <tr><td>3. Molido</td><td>Se tritura en hojuelas de 8-12mm llamadas "flake"</td><td>Coatzacoalcos, Poza Rica</td><td>2 horas</td></tr>
+                    <tr><td>4. Peletizado</td><td>Se funde a 260°C y se hacen pellets como arroz</td><td>Corredor Coatzacoalcos</td><td>3 horas</td></tr>
+                    <tr><td>5. Nueva Vida</td><td>Fibras textiles, láminas, botellas nuevas</td><td>Fábricas Orizaba, Xalapa</td><td>1 día</td></tr>
                 </table>
 
                 <div class="dato-extra">
-                    <b>♻️ Tipos de reciclaje de PET:</b> <br>
-                    <b>1. Mecánico:</b> El más común en Veracruz. Tritura, lava y funde. No cambia estructura química. 95% del reciclaje estatal. Costo: $18/kg. <br>
-                    <b>2. Químico:</b> Descompone el PET en sus monómeros: ácido tereftálico + etilenglicol. La UV lo investiga con enzimas. Calidad virgen pero cuesta 3x más: $55/kg. <br>
-                    <b>3. Energético:</b> Se incinera para generar energía. No se usa en Veracruz por contaminación del aire. Prohibido en Europa desde 2020. Emite dioxinas.
-                </div>
-
-                <div class="dato-extra">
-                    <b>⚠️ ¿Qué NO hacer con PET?</b> No metas PET al microondas, libera antimonio tóxico. No reutilices botellas más de 1 semana, generan bacterias como E.coli. No quemes PET en casa, genera dioxinas y furanos cancerígenos. No tires PET con aceite o cloro, contamina todo el lote. <b>No expongas al sol >30°C</b>: migra antimonio al agua.
+                    <b>♻️ Tipos de reciclaje:</b> <br>
+                    <b>1. Mecánico:</b> El más común en Veracruz. Tritura y funde. <br>
+                    <b>2. Químico:</b> Descompone el PET en monómeros. UV lo investiga. <br>
+                    <b>3. Energético:</b> Se quema para energía. No se usa en Ver. por contaminación.
                 </div>
             </section>
             <section id="innovacion">
                 <h2>5. Innovación Veracruzana: UV y Empresas</h2>
-                <h3>🔬 Proyectos de la Universidad Veracruzana 2026:</h3>
+                <h3>🔬 Proyectos de la Universidad Veracruzana:</h3>
                 <ul>
-                    <li><b>Enzimas Come-Plástico:</b> Bacterias <i>Ideonella sakaiensis</i> modificadas genéticamente que degradan PET en 4 semanas vs 450 años. Facultad de Bioanálisis Xalapa. Premio Nacional de Ciencias 2025. Ya patentado. Costo: $200/gramo.</li>
-                    <li><b>Bio-PET:</b> Plástico de caña de azúcar y bagazo de ingenios veracruzanos. 100% biodegradable en 6 meses en composta. Proyecto con Ingenio La Gloria y Motzorongo. Más barato que PET de petróleo: $22/kg vs $25/kg.</li>
-                    <li><b>Madera Plástica:</b> Bancas, juegos infantiles y muelles para parques hechos 100% de PET de playas. Ya hay 200 bancas en Malecón de Veracruz y 50 en Laguna de Catemaco. Duran 50 años sin mantenimiento. Resisten huracanes.</li>
-                    <li><b>Filtros de agua:</b> Carbón activado hecho de PET para comunidades sin agua potable en la Sierra de Zongolica. Filtran 99% de bacterias y metales. Cuestan $50 vs $800 comerciales. 1 filtro = 500 botellas.</li>
-                    <li><b>Concreto con PET:</b> Facultad de Ingeniería agrega PET molido al concreto. Es 15% más ligero, resistente a sismos y 20% más aislante térmico. Ya se usa en casas de interés social. Ahorra 30% cemento.</li>
-                    <li><b>Asfalto con PET:</b> Carreteras UV: 8% PET molido en asfalto. Dura 3x más, menos baches. Ya hay 5km en Xalapa. 1km = 500,000 botellas.</li>
+                    <li><b>Enzimas Come-Plástico:</b> Bacterias <i>Ideonella sakaiensis</i> que degradan PET en 4 semanas vs 450 años. Facultad de Bioanálisis</li>
+                    <li><b>Bio-PET:</b> Plástico de caña de azúcar y bagazo, 100% biodegradable en 6 meses. Proyecto con Ingenio La Gloria</li>
+                    <li><b>Madera Plástica:</b> Bancas para parques hechas 100% de PET de playas. Ya hay 200 en el Malecón</li>
+                    <li><b>Filtros de agua:</b> Carbón activado hecho de PET para comunidades sin agua potable</li>
                 </ul>
-                <h3>🏭 Empresas Innovadoras de Veracruz:</h3>
+                <h3>🏭 Empresas Innovadoras:</h3>
                 <table>
-                    <tr><th>Empresa</th><th>Ciudad</th><th>Innovación</th><th>Impacto 2026</th></tr>
-                    <tr><td>EcoPet Ver</td><td>Córdoba</td><td>Fibra para ropa deportiva. Proveen a Puma, Adidas, Nike</td><td>500 empleos, 80 ton/mes, exportan a USA y Canadá</td></tr>
-                    <tr><td>Verde Horizonte</td><td>Xalapa</td><td>Láminas para invernadero de vainilla y café de especialidad</td><td>200 agricultores, 50 ton/mes, +30% producción por mejor clima</td></tr>
-                    <tr><td>Mar Limpio SA</td><td>Coatzacoalcos</td><td>Botellas 100% recicladas grado alimenticio FDA</td><td>1M botellas/mes para Coca-Cola FEMSA, Bonafont</td></tr>
-                    <tr><td>PlastiMar</td><td>Tuxpan</td><td>Mallas para cultivo de ostión de PET marino recuperado</td><td>300 pescadores, duran 8 años vs 2 de nylon, no se enredan tortugas</td></tr>
-                    <tr><td>EcoConstruye</td><td>Poza Rica</td><td>Ladrillos ecológicos 30% PET molido + cemento</td><td>150 casas construidas, 40% más aislantes, 25% más baratos</td></tr>
-                    <tr><td>BioAsfalto Ver</td><td>Orizaba</td><td>Asfalto con 8% PET molido para carreteras</td><td>5km construidos, dura 15 años vs 5 años normal</td></tr>
+                    <tr><th>Empresa</th><th>Ciudad</th><th>Innovación</th><th>Impacto</th></tr>
+                    <tr><td>EcoPet Ver</td><td>Córdoba</td><td>Fibra para ropa deportiva. Proveen a Puma</td><td>500 empleos, 80 ton/mes</td></tr>
+                    <tr><td>Verde Horizonte</td><td>Xalapa</td><td>Láminas para invernadero de vainilla</td><td>200 agricultores, 50 ton/mes</td></tr>
+                    <tr><td>Mar Limpio SA</td><td>Coatzacoalcos</td><td>Botellas 100% recicladas grado alimenticio</td><td>1M botellas/mes, Coca-Cola</td></tr>
+                    <tr><td>PlastiMar</td><td>Tuxpan</td><td>Mallas para ostión de PET marino</td><td>300 pescadores beneficiados</td></tr>
                 </table>
             </section>
             <section id="calculadora">
@@ -261,7 +247,7 @@
                 <button onclick="sumarContador(10)">♻️ ¡Reciclé 10!</button>
                 <button onclick="resetContador()">🔄 Reiniciar</button>
                 <div class="progress-container"><div class="progress-bar" id="barraMeta">0 / 1000 botellas</div></div>
-                <p><i>Meta comunitaria: 1000 botellas = 25 kg menos de PET en playas de Veracruz</i></p>
+                <p><i>Meta comunitaria: 1000 botellas</i></p>
             </section>
             <section id="juego">
                 <h2>7. Mini Juego: Salva el Golfo de México</h2>
@@ -284,20 +270,83 @@
         </footer>
     </div>
     <script>
-        // Contador de visitas
-        let visitas = localStorage.getItem('visitasPET') || 0;
-        visitas++;
-        localStorage.setItem('visitasPET', visitas);
-        document.getElementById('contadorVisitas').textContent = visitas;
-        
-        // Fecha actual
-        document.getElementById('fechaActual').textContent = new Date().toLocaleDateString('es-MX', { year: 'numeric', month: 'long', day: 'numeric' });
-
-        // Modo Oscuro
         const btnModo = document.getElementById('btnModoOscuro');
         btnModo.addEventListener('click', function() {
             document.body.classList.toggle('modo-oscuro');
             if (document.body.classList.contains('modo-oscuro')) {
-                btnModo.textContent = '☀️ Modo Claro'; 
-                btnModo.style.background = '#64B5F6';
-                                                      
+                btnModo.textContent = '☀️ Modo Claro'; btnModo.style.background = '#64B5F6';
+            } else { btnModo.textContent = '🌙 Modo Oscuro'; btnModo.style.background = 'linear-gradient(45deg, #FFC107, #FF9800)'; }
+        });
+        function cambiarDato() {
+            const dato = document.getElementById('añosDegradacion');
+            dato.style.animation = 'rebotar 0.5s'; dato.textContent = '¡CASI 5 SIGLOS!';
+            setTimeout(() => { dato.style.animation = ''; }, 500);
+        }
+        function mostrarAlerta() { alert('🌊 Una botella de PET puede durar más que 15 generaciones de tu familia.\n\n¡Recicla hoy!'); }
+        function simularContaminacion() {
+            const barra = document.getElementById('barraContaminacion');
+            let porcentaje = 0;
+            const intervalo = setInterval(() => {
+                porcentaje += 2; barra.style.width = porcentaje + '%';
+                barra.textContent = porcentaje + '% Contaminado';
+                if (porcentaje >= 78) { clearInterval(intervalo); barra.textContent = '78% - Nivel Crítico 2026'; }
+            }, 30);
+        }
+        function mostrarHistoria(tipo) {
+            const info = document.getElementById('infoDinamica');
+            info.style.animation = 'aparecer 0.5s';
+            const historias = {
+                'botella': '🧴 <b>Nacimiento:</b> Se fabrica en Orizaba con petróleo. Una botella de 600ml pesa 25g. Tarda 2 segundos en llenarse, 450 años en desaparecer. México produce 9,000 millones de botellas al año.',
+                'playa': '🏖️ <b>Problema:</b> En Boca del Río se recogen 2 toneladas diarias. Las tortugas lora las confunden con medusas. El 90% de aves marinas tienen plástico en estómago. El PET libera antimonio tóxico al degradarse.',
+                'acopio': '📦 <b>Solución:</b> La UV tiene 15 centros de acopio. Pagan $10/kg. Estudiantes de Biología ganan becas reciclando. El programa "UV Verde" recolectó 45 toneladas en 2025.',
+                'ropa': '👕 <b>Nueva Vida:</b> Empresas de Córdoba hacen uniformes deportivos. 5 botellas = 1 playera. 10 botellas = 1 par de tenis. El PET reciclado ahorra 60% de energía vs PET virgen.'
+            };
+            info.innerHTML = historias;
+        }
+        function resaltarMeta() {
+            const filas = document.querySelectorAll('#tablaDatos tr');
+            filas[filas.length - 1].style.background = '#FFEB3B'; filas[filas.length - 1].style.transform = 'scale(1.05)';
+            setTimeout(() => { filas[filas.length - 1].style.background = ''; filas[filas.length - 1].style.transform = ''; }, 2000);
+        }
+        let ciudadesExtras = 0;
+        function agregarCiudad() {
+            if (ciudadesExtras >= 2) { alert('Ya agregaste todas las ciudades principales'); return; }
+            const lista = document.getElementById('listaCiudades');
+            const nuevas = ['<li><b>Poza Rica:</b> 4,800 ton/año - Programa "Río Limpio". Limpian río Cazones cada sábado</li>', '<li><b>Minatitlán:</b> 3,900 ton/año - Refinería verde. PEMEX recicla PET de trabajadores</li>'];
+            lista.innerHTML += nuevas[ciudadesExtras]; ciudadesExtras++;
+        }
+        function calcularAvanzado() {
+            let botellas = parseInt(document.getElementById('botellasSemana').value);
+            let porcentaje = parseInt(document.getElementById('porcentajeRecicla').value);
+            if (isNaN(botellas) || botellas < 0) { alert('⚠️ Escribe un número válido'); return; }
+            let totalAño = botellas * 52; let recicladas = Math.round(totalAño * porcentaje / 100);
+            let noRecicladas = totalAño - recicladas; let kilos = (totalAño * 0.025).toFixed(1);
+            let co2 = (recicladas * 0.04).toFixed(1); let arboles = Math.floor(recicladas / 100);
+            let agua = (recicladas * 0.5).toFixed(0);
+            const resultado = document.getElementById('resultadoCalculo');
+            resultado.style.animation = 'aparecer 0.5s';
+            resultado.innerHTML = `<b>📊 Tu Impacto Anual:</b><br>
+                🧴 Usas <b>${totalAño}</b> botellas = <b>${kilos} kg</b> de PET<br>
+                ♻️ Reciclas <b>${recicladas}</b> botellas (${porcentaje}%)<br>
+                🗑️ Tiras <b>${noRecicladas}</b> botellas al ambiente<br>
+                🌳 Salvas <b>${arboles} árboles</b> y evitas <b>${co2} kg CO2</b><br>
+                💧 Ahorras <b>${agua} litros</b> de agua<br>
+                ⏰ Si no reciclas: <b>${noRecicladas * 450}</b> años de contaminación`;
+        }
+        function limpiarCalculo() { document.getElementById('botellasSemana').value = ''; document.getElementById('resultadoCalculo').innerHTML = ''; }
+        let clicks = parseInt(localStorage.getItem('clicksPET')) || 0;
+        document.getElementById('contador').textContent = clicks; actualizarBarraMeta();
+        function sumarContador(cantidad = 1) {
+            clicks += cantidad; const contador = document.getElementById('contador');
+            contador.textContent = clicks; contador.classList.add('contador-animado');
+            setTimeout(() => contador.classList.remove('contador-animado'), 600);
+            localStorage.setItem('clicksPET', clicks); actualizarBarraMeta();
+            if (clicks % 50 === 0) { alert(`🎉 ¡Increíble! La comunidad lleva ${clicks} botellas recicladas`); }
+        }
+        function resetContador() { clicks = 0; document.getElementById('contador').textContent = 0; localStorage.setItem('clicksPET', 0); actualizarBarraMeta(); }
+        function actualizarBarraMeta() {
+            const barra = document.getElementById('barraMeta'); const porcentaje = Math.min((clicks / 1000) * 100, 100);
+            barra.style.width = porcentaje + '%'; barra.textContent = `${clicks} / 1000 botellas`;
+            if (clicks >= 1000) { barra.textContent = '🎉 ¡META CUMPLIDA!'; barra.style.background = 'linear-gradient(90deg, #FFD700, #FFA000)'; }
+        }
+        let puntos = 0, tiempo                              
